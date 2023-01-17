@@ -183,13 +183,21 @@ def delete_data_in_collection(collection_name):
     client.close()
 
 
-# tree = simple_google_image_search("salam")
+# tree = simple_google_image_search("ایران")
 # image_result = get_result_from_image_page(tree)
-# insert_image_results(image_result)
+# pprint(image_result)
+# insert_image_results(image_result, "ایران")
 
-tree = simple_google_search("محمد")
-search_results = get_result_from_page(tree)
-pprint(search_results)
-# insert_search_results(search_results, "محمد")
+# tree = simple_google_search("اسلام")
+# search_results = get_result_from_page(tree)
+# pprint(search_results)
+# insert_search_results(search_results, "ایران")
+
+# tree = simple_google_image_search("محمد")
+# image_result = get_result_from_image_page(tree)
+# download_image_of_query("محمد", image_result)
+
+# url = "https://vigiato.net/p/153846"
+# download_web_page(url, threaded=True)
 
 # delete_data_in_collection("search")
