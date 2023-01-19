@@ -73,6 +73,7 @@ def get_result_from_page(tree):
         if title == "NULL" and description == "NULL":
             continue
 
+        # todo fix nim fasele = \u200c
         return_list.append({
             "title": title.encode(encoding='utf-8').decode("UTF-8").replace('\u200c', ''),
             "link": link,
@@ -183,9 +184,9 @@ def delete_data_in_collection(collection_name):
     client.close()
 
 
-# tree = simple_google_image_search("ایران")
-# image_result = get_result_from_image_page(tree)
-# pprint(image_result)
+tree = simple_google_image_search("ایران")
+image_result = get_result_from_image_page(tree)
+pprint(image_result)
 # insert_image_results(image_result, "ایران")
 
 # tree = simple_google_search("اسلام")
